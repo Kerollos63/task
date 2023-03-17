@@ -1,25 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     box-sizing: border-box;
     color: #616060;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .container {
     width: 80%;
     margin: auto;
 }
 
-body {
-    height: 3000px;
-}
+
 
 /* ..........................................navbar start....................................... */
 .navbar {
     background-color: hsl(228deg 56% 98%);
-
 }
 
 
@@ -63,6 +59,11 @@ body {
     text-decoration: none;
 }
 
+.navbar li a:hover {
+    color: #e99c2e;
+
+}
+
 .navbar .icons i {
     margin: 15px;
     color: #6f716f;
@@ -70,7 +71,6 @@ body {
 
 .navbar .navbar_content {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-between;
@@ -80,8 +80,7 @@ body {
 /* ..........................................navbar end....................................... */
 /* ..........................................design start....................................... */
 .design {
-    background-color: hsl(228deg 56% 98%);
-
+    background-color: rgb(247, 248, 253);
 }
 
 .design .design_content {
@@ -142,6 +141,11 @@ body {
 .design .design_content .second .first_button i {
     color: #ffffff;
     background-color: #e99c2e;
+    padding-right: 5px;
+}
+
+.design .design_content .second .first_button span {
+    color: #ffffff;
 
 }
 
@@ -155,6 +159,11 @@ body {
     margin-top: 20px;
 }
 
+.design .design_content .second .second_button span {
+    color: #e99c2e;
+
+}
+
 /* ..........................................design end....................................... */
 /* ..........................................main start....................................... */
 
@@ -166,11 +175,10 @@ body {
 
 .main .products {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
 }
 
@@ -191,16 +199,16 @@ body {
     width: 50%;
     display: flex;
     background-color: hsl(228deg 56% 98%);
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     align-content: stretch;
     margin: 40px;
+    padding: 21px;
 }
 
 .main .products .stool .first {
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 .main .products .stool .second {
@@ -221,9 +229,6 @@ body {
     width: 130px;
 }
 
-
-
-
 .main .products .lamp {
     width: 300px;
     text-align: center;
@@ -234,7 +239,8 @@ body {
 
 .white {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin: 50px;
 }
 
 /* ..........................................white end....................................... */
@@ -242,7 +248,6 @@ body {
 
 .new_arrivals .new_arrivals_content {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -335,47 +340,225 @@ body {
 
 }
 
+/* ..........................................middle end....................................... */
+/* ..........................................featured intro start....................................... */
+.featured_products_intro {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px;
+}
+
+/* ..........................................featured intro end....................................... */
+/* ..........................................featured p start....................................... */
+
+.featured_products .featured_products_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured_products .featured_products_content .product img {
+    width: 122%;
+    padding-right: 64px;
+}
 
 
 
+.featured_products .featured_products_content .product {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured_products .featured_products_content .product .star {
+    padding-top: 15px;
+}
+
+.featured_products .featured_products_content .product .star .active i {
+    color: gold;
+}
+
+.featured_products .featured_products_content .product .star .after::after {
+    content: "(45 views)";
+    padding-left: 15px;
+}
+
+
+/* ..........................................featured p end....................................... */
+/* ..........................................latest blog intro start....................................... */
+
+.latest_blog_intro {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px;
+}
+
+/* ..........................................latest blog intro end....................................... */
+/* ..........................................latest blog  start....................................... */
+
+
+.latest_blog .latest_blog_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest_blog .latest_blog_content .part {
+    width: 30%;
+}
+
+.latest_blog .latest_blog_content .part img {
+    max-width: 100%;
+}
+
+.latest_blog .latest_blog_content .part h4::after {
+    content: "By Robert Norby/18march 2018";
+    display: block;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+/* ..........................................latest blog  end....................................... */
+/* ..........................................clients  start....................................... */
 
 
 
+.clients {
+    background-color: hsl(228deg 56% 98%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
 
 
+.clients img {
+    padding: 64px;
+}
+
+/* ..........................................clients  end....................................... */
+/* ..........................................final  start....................................... */
+.final .final_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 80px 0px;
+}
+
+.final .final_content .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+
+}
+
+.final .final_content .item a {
+    padding-top: 50px;
+}
 
 
+.final .final_content .item a:any-link {
+    text-decoration: none;
+}
+
+.final .final_content .item p {
+    padding: 37px 0px;
+}
+
+.final .final_content .item input {
+    box-shadow: 1px 3px 12px -5px rgb(0 0 0);
+    color: transparent;
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+
+.final .final_content .item input::placeholder {
+    padding-left: 10px;
+}
 
 
+.footer {
+    height: 150px;
+    background-color: hsl(228deg 56% 98%);
+}
+
+.footer .footer_content .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .footer_content .icons i {
+    padding: 0px 40px;
+    line-height: 102px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer .footer_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
 
 /* ..........................................media start....................................... */
 
-@media (min-width:0px) and (max-width: 1166px) {
+
+
+/* 
+    @media (min-width:0px) and (max-width: 1480px) {
+        .latest_blog .latest_blog_content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: wrap;
+            padding-right: 10%;
+            text-align: center;
+        }
+
+        .latest_blog .latest_blog_content .part .content {
+            text-align: start;
+            width: 130%;
+        }
+
+        .latest_blog .latest_blog_content .part {
+            padding: 0px;
+
+        }
+    } */
+
+@media(min-width:700px) and (max-width:1000px) {
+    .latest_blog .latest_blog_content .part {
+        font-size: .7rem
+    }
+}
+
+@media(max-width:700px) {
+    .latest_blog .latest_blog_content {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .latest_blog .latest_blog_content .part {
+        width: 80%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:1650px) {
+    .main .products .stool {
+        order: 1
+    }
+}
+
+
+@media (max-width: 1166px) {
     .navbar .navbar_content {
         display: flex;
         flex-direction: column;
@@ -389,6 +572,12 @@ body {
     }
 
 }
+
+
+
+
+
+
 
 @media (min-width:0px) and (max-width: 746px) {
     .navbar ul {

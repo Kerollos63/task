@@ -18,10 +18,20 @@
     <meta name="audience" content="Everyone">
     <meta name="robots" content="index, follow">
     <meta name="icon" content="">
+    <meta property="og:image" content="https://example." />
+    <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>My site</title>
 </head>
 
 <body>
@@ -40,9 +50,9 @@
                     <li><a href="#">blog</a></li>
                 </ul>
                 <div class="icons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-gear"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </div>
@@ -60,13 +70,13 @@
                     <span class="new_price">$ 399.00</span>
                     <span class="old_price">$ 499.00</span>
                     <p></p>
-                    <button class="first_button">
-                        <i class="fa-solid fa-circle-plus"></i>
-                        add to cart
-                    </button>
-                    <button class="second_button">
-                        more info
-                    </button>
+                    <a href="#"><button class="first_button">
+                            <i class="fa-solid fa-circle-plus"></i>
+                            <span>add to cart</span>
+                        </button></a>
+                    <a href="#"><button class="second_button">
+                            <span>more info</span>
+                        </button></a>
                 </div>
             </div>
         </div>
@@ -162,7 +172,11 @@
         <div class="container">
             <div class="middle_content">
                 <h2>Unlimited Sofa Collection</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, a sed saepe sunt velit deleniti! Repudiandae culpa sed voluptas voluptatum! Numquam et deleniti possimus iste blanditiis ducimus. Reiciendis, ea quasi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim animi nemo optio fugit non autem dolore harum voluptates, iste, corrupti veritatis in, ex doloremque magnam illo sed suscipit. Dignissimos, eaque.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, a sed saepe sunt velit deleniti!
+                    Repudiandae culpa sed voluptas voluptatum! Numquam et deleniti possimus iste blanditiis ducimus.
+                    Reiciendis, ea quasi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim animi nemo
+                    optio fugit non autem dolore harum voluptates, iste, corrupti veritatis in, ex doloremque magnam
+                    illo sed suscipit. Dignissimos, eaque.</p>
                 <h4>Starting From</h4>
                 <button>
                     View More
@@ -170,6 +184,172 @@
             </div>
         </div>
     </div>
+    <div class="featured_products_intro">
+        <p>Featured Products</p>
+    </div>
+    <div class="featured_products">
+        <div class="container">
+            <div class="featured_products_content">
+                <div class="product">
+                    <img src="./images/features/f1.jpg">
+                    <div class="star">
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="after"> <i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <h4>Designed Sofa</h4>
+                    <span>$160.00</span>
+                </div>
+                <div class="product">
+                    <img src="./images/features/f2.jpg">
+                    <div class="star">
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="after"> <i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <h4>Dinning Table</h4>
+                    <span>$200.00</span>
+                </div>
+                <div class="product">
+                    <img src="./images/features/f3.jpg">
+                    <div class="star">
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="after"> <i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <h4>Chair and table</h4>
+                    <span>$100.00</span>
+                </div>
+                <div class="product">
+                    <img src="./images/features/f4.jpg">
+                    <div class="star">
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="active"> <i class="fa-solid fa-star"></i></span>
+                        <span class="after"> <i class="fa-solid fa-star"></i></span>
+                    </div>
+                    <h4>Modern Arm Chair</h4>
+                    <span>$2990.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="latest_blog_intro">
+        <p>Latest Blog</p>
+    </div>
+    <div class="latest_blog">
+        <div class="container">
+            <div class="latest_blog_content">
+                <div class="part">
+                    <img src="./images/blog/b1.jpg" alt="#">
+                    <div class="content">
+                        <h4>Why Brands are looking at local Language</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam quasi voluptates aperiam
+                            explicabo
+                            repellat delectus consequuntur qui ipsam, repellendus quas quidem? Rem expedita et
+                            consectetur
+                            explicabo delectus earum excepturi.</p>
+                    </div>
+                </div>
+                <div class="part">
+                    <img src="./images/blog/b2.jpg" alt="#">
+                    <div class="content">
+                        <h4>Why Brands are looking at local Language</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam quasi voluptates aperiam
+                            explicabo
+                            repellat delectus consequuntur qui ipsam, repellendus quas quidem? Rem expedita et
+                            consectetur
+                            explicabo delectus earum excepturi.</p>
+                    </div>
+                </div>
+                <div class="part">
+                    <img src="./images/blog/b3.jpg" alt="#">
+                    <div class="content">
+                        <h4>Why Brands are looking at local Language</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam quasi voluptates aperiam
+                            explicabo
+                            repellat delectus consequuntur qui ipsam, repellendus quas quidem? Rem expedita et
+                            consectetur
+                            explicabo delectus earum excepturi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clients">
+        <img src="./images/clients/c1.png" alt="">
+        <img src="./images/clients/c2.png" alt="">
+        <img src="./images/clients/c3.png" alt="">
+        <img src="./images/clients/c4.png" alt="">
+        <img src="./images/clients/c5.png" alt="">
+    </div>
+    <div class="final">
+        <div class="container">
+            <div class="final_content">
+                <div class="item">
+                    <h3>Informaltion</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">News</a>
+                    <a href="#">Store</a>
+                </div>
+                <div class="item">
+                    <h3>Collection</h3>
+                    <a href="#">Wooden Chair</a>
+                    <a href="#">Royal Cloth Sofa</a>
+                    <a href="#">Accent Chair</a>
+                    <a href="#">Bed</a>
+                    <a href="#">Hanging Lamp</a>
+                </div>
+                <div class="item">
+                    <h3>My Accounts</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Wishlst</a>
+                    <a href="#">Community</a>
+                    <a href="#">Order History</a>
+                    <a href="#">My Cart</a>
+                </div>
+                <div class="item">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get lastest news,updates and information</p>
+                    <input type="email" placeholder="Enter Email Here">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"> <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <i class="fa-regular fa-copyright"></i>
+                        <span>Copyright. Kerollos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
 
 </body>
 
