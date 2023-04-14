@@ -404,6 +404,7 @@
 
 .latest_blog .latest_blog_content .part {
     width: 30%;
+    text-align: center;
 }
 
 .latest_blog .latest_blog_content .part img {
@@ -482,7 +483,6 @@
 
 
 .footer {
-    height: 150px;
     background-color: hsl(228deg 56% 98%);
 }
 
@@ -505,6 +505,10 @@
     align-content: center;
     align-items: center;
 }
+
+
+
+
 
 /* ..........................................media start....................................... */
 
